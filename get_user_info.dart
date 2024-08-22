@@ -22,9 +22,7 @@ void main() {
     },
   ];
 
-  dynamic firstUserId = userInfoDatabase[0]["id"];
-  dynamic secondtUserId = userInfoDatabase[1]["id"];
-  dynamic thirdUserId = userInfoDatabase[2]["id"];
+  
 
   print("Für Info die User ID von 1 bis ${userInfoDatabase.length} eingeben");
 
@@ -32,11 +30,5 @@ void main() {
 
   int userInput = int.parse(idInput);
 
-  if (userInput == firstUserId) {
-    print(userInfoDatabase[--firstUserId]);
-  } else if (userInput == secondtUserId) {
-    print(userInfoDatabase[--secondtUserId]);
-  } else if (userInput == thirdUserId) {
-    print(userInfoDatabase[--thirdUserId]);
-  }
+  print(userInfoDatabase[--userInput]);
 }
